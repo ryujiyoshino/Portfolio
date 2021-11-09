@@ -1,0 +1,173 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.start {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start h1 {
+	position: fixed;
+	top:40%;
+  left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 555px;
+  color: black;
+  font-size: 100px;
+  font-family: 'Sacramento', cursive;
+}
+header {
+  z-index: 10;
+  position: fixed;
+  background-color: #333;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.6;
+}
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+header h1 {
+  font-size: 40px;
+  font-family: 'Sacramento', cursive;
+  padding: 15px 35px 0;
+  margin: 0;
+}
+header h1 a {
+  color: white;
+}
+.nav ul{
+  margin: 0;
+  display: flex;
+  padding: 0 20px ;
+}
+.nav-site li {
+  padding: 25px;
+  width: 120px;
+  text-align: center;
+  height: 80px;
+  margin: 0;
+  float: right;
+}
+
+.nav-site li:hover {
+  background-color: #50b8f5;
+  color: white;
+}
+.nav-site a {
+  font-size: 20px;
+  color: white;
+}
+
+.nav-site a:hover {
+  opacity: 1;
+}
+.about-wrapper {
+  position: relative;
+}
+.about-wrapper img{
+  width: 100%;
+  height: 100vh;
+}
+.text-content {
+  position: absolute;
+  top: 100px;
+  color: white;
+  padding-left: 35px;
+}
+.text-content h2 {
+  font-size: 50px;
+  margin:50px 0;
+}
+.text-content p {
+  line-height: 50px;
+  margin: 100px 0;
+  font-size: 30px;
+}
+.work-wrapper {
+  padding: 50px 0;
+}
+.work-wrapper h2 {
+  text-align: center;
+  font-size: 50px;
+}
+.works {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+.work {
+  width: 26%;
+  margin-bottom: 30px;
+  box-shadow: 0 0 8px black;
+  transition: all 0.5s;
+}
+.work a{
+  color: #333;
+}
+.work-content {
+  text-align: center;
+}
+.contact-wrapper {
+  padding: 50px 0;
+  background-color: rgba(3,3,3,1);
+  color: white;
+}
+.contact-content {
+  width: 800px;
+  margin: 0 auto;
+}
+.contact-wrapper h2 {
+  text-align: center;
+  font-size: 50px;
+}
+form input {
+  width: 48%;
+  height: 40px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 5px;
+}
+.name {
+  float: left;
+}
+.email {
+  float: right;
+}
+form textarea {
+  width: 100%;
+  height: 80px;
+  font-size: 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 5px;
+}
+.submit-btn {
+  text-align: center;
+  margin-top:20px;
+}
+.submit {
+  width: 10%;
+}

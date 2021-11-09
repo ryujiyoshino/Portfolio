@@ -1,0 +1,213 @@
+body {
+  color: #333;
+  font-size: 0.875rem;
+  min-height: 100vh;
+  position: relative;
+}
+li {
+  list-style: none;
+}
+a:hover {
+  opacity: 0.5;
+}
+a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+header {
+  position: fixed;
+  z-index: 10;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  background-color: white;
+  top: 0;
+}
+.container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.nav {
+  position: fixed;
+  z-index: 20;
+  color: #fff;
+  opacity: 1;
+  transition: all 0.5s;
+  left: -300px;
+  width: 300px;
+  top:0;
+  padding: 36px 50px;
+}
+.nav li {
+  margin-bottom: 14px;
+}
+.nav a {
+  color:#fff;
+}
+.open #nav {
+  opacity: 1;
+  left:0;
+}
+.btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 20;
+}
+.btn span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+.btn span:nth-child(1) {
+  top:10px;
+}
+.btn span:nth-child(2) {
+  bottom: 10px;
+}
+.open #btn span {
+  background-color: #fff;
+}
+.open #btn span:nth-child(1) {
+  -webkit-transform: translateY(4px) rotate(-45deg);
+  transform: translateY(4px) rotate(-45deg);
+}
+.open #btn span:nth-child(2) {
+  -webkit-transform: translateY(-4px) rotate(45deg);
+  transform: translateY(-4px) rotate(45deg);
+}
+.header-title img {
+  width: 180px;
+  line-height: 1px;
+  display: block;
+}
+.mask {
+  display: none;
+  transition: 0.5s;
+}
+.open .mask {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .8;
+  z-index: 10;
+  cursor: pointer;
+}
+main {
+  padding-top: 100px;
+}
+main p {
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+.company dt {
+  float: left;
+  clear: left;
+  width: 30%;
+  border-bottom: solid 1px #dcdbdb;
+  padding: 20px 10px;
+}
+.company dd {
+  width: 70%;
+  border-bottom: solid 1px #dcdbdb;
+  padding: 20px 10px;
+}
+.company dd:last-of-type {
+  border-bottom: none;
+  line-height: 20px;
+}
+.company dt:last-of-type {
+  border-bottom: none;
+}
+.map iframe{
+  width: 70%;
+  height: 300px;
+}
+.map {
+  padding-bottom: 200px;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.items2 {
+  display: flex;
+}
+.items2 li {
+  width: 23%;
+}
+.items2 img {
+  width: 260px;
+}
+.items li {
+  width: 23%;
+}
+.items img {
+  width: 260px;
+}
+.select-btn ul {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+.select-btn li {
+  padding: 0 20px 20px;
+}
+footer ul li{
+  display: inline-block;
+}
+footer {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+.footer-left{
+  float: left;
+}
+.footer-right {
+  float: right;
+}
+.footer-left a {
+  font-size: 0.8rem;
+  padding-left: 10px;
+}
+.item1 {
+  display: flex;
+  align-items: flex-start;
+}
+.item1 img {
+  width: 400px;
+  padding-right: 70px;
+}
+.item1 p {
+  line-height: 20px;
+}
+.item1 dt {
+  float: left;
+  clear: left;
+  margin-right: 40px;
+  width: 60px;
+}
+.back-btn {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 250px;
+}
